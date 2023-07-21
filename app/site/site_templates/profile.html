@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<section class="text-dark text-center" id="navbar">
+		<div class="container p-5" id="navbar">
+			<div class="row">
+				<div class="d-md-flex align-items-center justify-content-evenly" id="navbar">
+					<h1 class="col text-center">{{ current_user.first_name }}'s user profile</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="text-center">
+		<div class="container p-10">
+			<div class="row"><br>
+				<h3 class="p-5">Here are your profile details</h3>
+				<ul class="list-group">
+					<li class="list-group-item">Name: {{ current_user.first_name }}</li>
+					<li class="list-group-item">Email: {{ current_user.email }}</li>
+                    <li class="list-group-item">Token: {{ current_user.token }}</li>
+				</ul>
+			</div>
+			<div class="row" style="margin-top: 20px;">
+				<div class="col-4"></div>
+				<div class="">
+					<img src="../../static/images/istockphoto-543807006-612x612.jpg" class="d-flex align-items-center justify-content-evenly p-50 img-fluid" id="profile_img">
+				</div>
+				<div class="col-3"></div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
