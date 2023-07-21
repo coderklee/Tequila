@@ -21,3 +21,11 @@ body{
     width: 100%;
     background-size: cover;
 }
+
+#topnav{
+	background-color: rgb(244, 220, 224);
+}
+
+#background{
+    background-color: black;
+}
